@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Islamic Thoughts</title>
 
-  <!-- Font Awesome for social icons -->
+  <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
@@ -18,6 +18,7 @@
       font-family: 'Poppins', sans-serif;
       background: #f4f4f4;
       color: white;
+      scroll-behavior: smooth;
     }
 
     a { text-decoration: none; }
@@ -30,6 +31,9 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav h2 { color: #d4af37; margin: 0; }
     nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
@@ -49,7 +53,7 @@
       padding: 20px;
     }
     .hero h1 { font-size: 50px; color: #d4af37; margin: 0; }
-    .hero p { font-size: 20px; color: #ccc; }
+    .hero p { font-size: 20px; color: #ccc; margin-top: 10px; }
     .btn { display: inline-block; margin-top: 20px; padding: 12px 30px; background: #d4af37; color: #0f3d3e; border-radius: 5px; font-weight: 600; transition: 0.3s; }
     .btn:hover { color: #fff; }
 
@@ -57,13 +61,14 @@
     section h2 { color: #d4af37; margin-bottom: 20px; text-align: center; }
 
     /* LIBRARY */
-    #library { padding: 70px 20px; text-align: center; }
+    #library { padding: 70px 20px; text-align: center; background: #111; }
     .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
     .card {
       background: #2a2a2a; padding: 30px; width: 250px; border-radius: 10px; transition: 0.3s;
+      text-align: center;
     }
     .card:hover { transform: translateY(-10px); background: #0f3d3e; }
-    .card a { color: #d4af37; font-weight: 600; }
+    .card a { color: #d4af37; font-weight: 600; display: block; margin-bottom: 10px; }
     .card a:hover { color: #fff; }
 
     /* TikTok */
@@ -71,7 +76,7 @@
     #tiktok .btn { margin-top: 15px; }
 
     /* YouTube */
-    #youtube { padding: 50px 20px; text-align: center; }
+    #youtube { padding: 50px 20px; text-align: center; background: #111; }
     #youtube .btn { margin-top: 15px; }
 
     /* About */
@@ -86,7 +91,7 @@
     /* Footer */
     footer { background: #111; padding: 30px 20px; text-align: center; border-top: 3px solid #d4af37; }
     footer p { margin: 5px; }
-    .social-icons { display: flex; justify-content: center; margin-top: 15px; }
+    .social-icons { display: flex; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
     .social-icons a { color: white; font-size: 28px; margin: 0 12px; transition: 0.3s; }
     .social-icons a:hover { color: #d4af37; }
 
